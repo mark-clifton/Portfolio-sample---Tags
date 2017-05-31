@@ -1,0 +1,260 @@
+/* ==========================================================================
+Fonts
+========================================================================== */
+
+/* Font weights */
+
+$light-weight: 200;
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=efee6173-7bcd-4008-b427-cf011d0f21fa");
+
+/* Avant Garde */
+
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01_n2";
+	src:url("fonts/123b5137-3b00-48e9-bfec-161edb6f2377.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01";
+	src:url("fonts/123b5137-3b00-48e9-bfec-161edb6f2377.eot?#iefix");
+	src:url("fonts/123b5137-3b00-48e9-bfec-161edb6f2377.eot?#iefix") format("eot"),url("fonts/e2726b32-fedc-4803-806a-a029c705ad22.woff2") format("woff2"),url("fonts/cc19831d-e4b6-40fa-b009-45b1365dde5d.woff") format("woff"),url("fonts/67615a4b-d349-4fda-8180-f0657773c140.ttf") format("truetype"),url("fonts/ebddf8dd-9674-4364-86a0-f7d444cab14e.svg#ebddf8dd-9674-4364-86a0-f7d444cab14e") format("svg");
+	font-weight: $light-weight;
+	font-style: normal;
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01_o2";
+	src:url("fonts/a8bbbc83-55ff-4bd9-91c4-486608d7bdc7.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01";
+	src:url("fonts/a8bbbc83-55ff-4bd9-91c4-486608d7bdc7.eot?#iefix");
+	src:url("fonts/a8bbbc83-55ff-4bd9-91c4-486608d7bdc7.eot?#iefix") format("eot"),url("fonts/a51eafba-4e39-42fc-9979-1c7766574136.woff2") format("woff2"),url("fonts/a4129a71-13e0-42e5-b6a6-624dd9f55d96.woff") format("woff"),url("fonts/434bedf5-364c-4bfe-810e-a540835e2abe.ttf") format("truetype"),url("fonts/64944f4a-077f-475f-8002-088f511e615d.svg#64944f4a-077f-475f-8002-088f511e615d") format("svg");
+	font-weight: $light-weight;
+	font-style: italic;
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01_n4";
+	src:url("fonts/07413afc-2280-4cfc-8860-184839a93fa4.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01";
+	src:url("fonts/07413afc-2280-4cfc-8860-184839a93fa4.eot?#iefix");
+	src:url("fonts/07413afc-2280-4cfc-8860-184839a93fa4.eot?#iefix") format("eot"),url("fonts/6f1146c0-9c0b-4949-866d-9affc396531f.woff2") format("woff2"),url("fonts/2c50f982-bb73-4891-8d0e-587c1136c2e5.woff") format("woff"),url("fonts/abf065fe-a1ab-4013-8c49-45ce7f8ac828.ttf") format("truetype"),url("fonts/33f16cdf-c09a-4344-89ce-e17a5ecf4664.svg#33f16cdf-c09a-4344-89ce-e17a5ecf4664") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01_i4";
+	src:url("fonts/316488bd-ab44-4659-8097-c777e49cb779.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01";
+	src:url("fonts/316488bd-ab44-4659-8097-c777e49cb779.eot?#iefix");
+	src:url("fonts/316488bd-ab44-4659-8097-c777e49cb779.eot?#iefix") format("eot"),url("fonts/abe9daef-72eb-45cc-a93a-7d6285130117.woff2") format("woff2"),url("fonts/69fdedf5-3ddd-4815-99d0-4f04ec6c5443.woff") format("woff"),url("fonts/d3143815-aa58-48b1-a22d-f5e6528b535f.ttf") format("truetype"),url("fonts/00d72ac7-a26a-4b99-ab25-505e83d5128f.svg#00d72ac7-a26a-4b99-ab25-505e83d5128f") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01_n7";
+	src:url("fonts/38de0cc0-acad-43e5-b0d6-87171c0915f7.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01";
+	src:url("fonts/38de0cc0-acad-43e5-b0d6-87171c0915f7.eot?#iefix");
+	src:url("fonts/38de0cc0-acad-43e5-b0d6-87171c0915f7.eot?#iefix") format("eot"),url("fonts/8bfba692-98b4-401d-b187-205f59d508cf.woff2") format("woff2"),url("fonts/29cf02ec-9cbf-449b-abff-06b4ab9b1cc0.woff") format("woff"),url("fonts/d35364ca-710c-4712-8aed-068488f4fdc1.ttf") format("truetype"),url("fonts/cf105897-a984-495f-bfd0-c5285f7a495e.svg#cf105897-a984-495f-bfd0-c5285f7a495e") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01_i7";
+	src:url("fonts/111785b0-b555-4ac5-b542-ff792bc389e6.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"ITC Avant Garde Gothic W01";
+	src:url("fonts/111785b0-b555-4ac5-b542-ff792bc389e6.eot?#iefix");
+	src:url("fonts/111785b0-b555-4ac5-b542-ff792bc389e6.eot?#iefix") format("eot"),url("fonts/082675ed-18a7-4b5a-bff4-d35a33d1dc99.woff2") format("woff2"),url("fonts/0bf5c922-45db-471a-bd44-f23d0fc87e4b.woff") format("woff"),url("fonts/2a56deb3-23ac-4527-8a24-94fef6309187.ttf") format("truetype"),url("fonts/798b1475-ad6c-49df-a359-6c14b054c569.svg#798b1475-ad6c-49df-a359-6c14b054c569") format("svg");
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Proxima Nova */
+
+@font-face{
+	font-family:"Proxima Nova W01_n4";
+	src:url("fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"Proxima Nova W01";
+	src:url("fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix");
+	src:url("fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"),url("fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"),url("fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"),url("fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype"),url("fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family:"Proxima Nova W01_i4";
+	src:url("fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"Proxima Nova W01";
+	src:url("fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot?#iefix");
+	src:url("fonts/bc15a635-a09b-40d1-a5c4-70310166177d.eot?#iefix") format("eot"),url("fonts/129d49d6-5492-4ed1-96f7-0528c6d53abc.woff2") format("woff2"),url("fonts/9c69c878-2255-4027-8632-ed3635cddf45.woff") format("woff"),url("fonts/b7eb3871-e910-4522-9982-effb425a2714.ttf") format("truetype"),url("fonts/a0d89860-20e5-4bc0-b6c5-eae8ae0ebbbf.svg#a0d89860-20e5-4bc0-b6c5-eae8ae0ebbbf") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face{
+	font-family:"Proxima Nova W01_n7";
+	src:url("fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"Proxima Nova W01";
+	src:url("fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix");
+	src:url("fonts/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot"),url("fonts/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2") format("woff2"),url("fonts/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff") format("woff"),url("fonts/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf") format("truetype"),url("fonts/8152bc4e-d700-4c78-b6be-326893e6f53f.svg#8152bc4e-d700-4c78-b6be-326893e6f53f") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family:"Proxima Nova W01_i7";
+	src:url("fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot?#iefix") format("eot")
+}
+@font-face{
+	font-family:"Proxima Nova W01";
+	src:url("fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot?#iefix");
+	src:url("fonts/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot?#iefix") format("eot"),url("fonts/a6315c03-b55d-42b0-8ed6-79060867137d.woff2") format("woff2"),url("fonts/46d5674a-f287-4240-b87a-f207aeb83064.woff") format("woff"),url("fonts/9bd640b2-9a56-4391-b213-767ae9c30ef4.ttf") format("truetype"),url("fonts/1500822b-1abc-4461-81dd-b48cfcf99020.svg#1500822b-1abc-4461-81dd-b48cfcf99020") format("svg");
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Font families */
+
+$title-font: "ITC Avant Garde Gothic W01", sans-serif;
+$text-font: "Proxima Nova W01", sans-serif;
+
+/* ==========================================================================
+Typography defaults
+========================================================================== */
+
+html {
+	font-family: $text-font;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+body {
+	color: $dark;
+	background-color: $light;
+}
+a {
+	text-decoration: none;
+	color: $brand-color;
+	&:hover {
+		color: $brand-color-light;
+	}
+}
+img, svg, input, select, textarea, button, .button {
+	vertical-align: middle;
+}
+svg, img, iframe {
+	max-width: 100%;
+}
+img {
+	height: auto;
+}
+hr {
+	color: $neutral-light;
+	background-color: $neutral-light;
+	height: 1px;
+	padding: 0;
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title-font;
+}
+h1 {
+	font-size: $base-font-size * 3;
+	line-height: 1.25em;
+	font-weight: $light-weight;
+	margin-top: 0;
+}
+h2 {
+	font-weight: normal;
+	color: $neutral;
+}
+h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h3 {
+	font-size: $base-font-size;
+}
+h4 {
+	font-size: $base-font-size * .875;
+}
+@mixin button {
+	font-family: $title-font;
+	font-weight: bold;
+	display: inline-block;
+	text-align: center;
+	padding: ($padding-unit * .25) ($padding-unit * .5);
+	border: none;
+	border-radius: $corner-radius;
+	transition: background-color .25s;
+	cursor: pointer;
+	-webkit-appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+.button, input[type=button], button, input[type=reset], input[type=submit], .nav-toggle, .side-nav li a {
+	@include button;
+	color: $light;
+	background-color: $brand-color;
+	&:hover {
+		color: $light;
+		background-color: $brand-color-light;
+	}
+	&.button-alt, &.on {
+		background-color: $neutral;
+		&:hover {
+			background-color: lighten($neutral, 10%);
+		}
+	}
+	&.button-light {
+		color: $brand-color;
+		background-color: $light;
+		&:hover {
+			color: $light;
+			background-color: $brand-color;
+		}
+	}
+}
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	overflow: auto;
+}
+caption, th, td {
+	font-size: 1em;
+	text-align: left;
+	vertical-align: top;
+}
+header ul, nav ul, aside ul, footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+header ul li, nav ul li, aside ul li, footer ul li {
+	list-style: none;
+}
+dt {
+	font-weight: bold;
+}

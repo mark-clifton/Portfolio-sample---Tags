@@ -1,0 +1,71 @@
+/* ====================================================================================================================
+Base font variables
+==================================================================================================================== */
+
+$base-font-size: 1rem !default;
+$base-line-height: 1.5rem !default;
+
+/* ====================================================================================================================
+Media queries
+==================================================================================================================== */
+
+$break-xsmall: 319px;
+$break-small: 479px;
+$break-medium: 747px;
+$break-large: 1003px;
+
+/* ====================================================================================================================
+Containers
+==================================================================================================================== */
+
+$padding-unit: $base-line-height;
+$corner-radius: $base-font-size * .25;
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin no-top-bottom-margins {
+	*:first-child {
+		margin-top: 0;
+	}
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+.wrapper {
+	max-width: 75rem;
+	margin: 0 auto;
+	@include clearfix;
+	position: relative;
+}
+.anchor {
+	position: absolute;
+	top: -6rem;
+	z-index: -1;
+}
+
+/* ====================================================================================================================
+Imports
+==================================================================================================================== */
+
+// Import Normalize & Grid Generator
+@import "normalize";
+@import "grid-generator";
+// Generate Grid
+@include gridGenerator();
+// Import Style Sheets
+@import "colors";
+@import "typography";
+@import "helper";
+@import "header";
+@import "nav";
+@import "content";
+@import "sidebar";
+@import "footer";
+@import "print";

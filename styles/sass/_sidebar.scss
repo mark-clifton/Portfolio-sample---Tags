@@ -1,0 +1,55 @@
+.side {
+	padding: 0 $padding-unit;
+}
+.side-nav {
+	h2 {
+		margin: 0 0 ($padding-unit * .5) 0;
+	}
+	li {
+		margin: ($padding-unit * .125) 0;
+		a {
+			display: block;
+			text-align: left;
+		}
+	}
+}
+.side-photo {
+	img {
+		height: auto;
+		width: 100%;
+	}
+}
+.photo {
+	border-radius: $corner-radius;
+}
+.testimonial {
+	font-family: $title-font;
+	font-size: $base-font-size * 1.5;
+	line-height: 1.25em;
+	font-style: italic;
+	color: $neutral;
+	background: url("../images/quote.svg") no-repeat left top;
+	margin: $padding-unit 0;
+	padding: $padding-unit 0 0 $padding-unit;
+	p {
+		margin: 0;
+	}
+	cite {
+		font-family: $text-font;
+		font-size: $base-font-size * .875;
+		line-height: $base-line-height;
+		font-style: normal;
+	}
+}
+
+@media only screen and (min-width: $break-medium + 1) {
+
+	.side {
+		padding: $padding-unit;
+	}
+	.side-photo {
+		padding-top: $padding-unit;
+		padding-left: 0;
+	}
+
+}

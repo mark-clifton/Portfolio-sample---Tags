@@ -1,0 +1,55 @@
+/* ==========================================================================
+Print styles
+========================================================================== */
+
+@media print {
+	/* Defaults */
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow:none !important;
+		text-shadow: none !important;
+	}
+	a {
+		&:visited {
+			text-decoration: none;
+		}
+	}
+	pre, blockquote {
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr, img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+	/* Site specific */
+	nav, .button, button, input[type=reset], input[type=submit], input[type=button], .front-news, .hero img, .template-photo, .image-left, .image-right, .contact-map {
+		display: none !important;
+	}
+	.page-wrapper {
+		padding-top: 0 !important;
+	}
+	.hero {
+		height: auto;
+		.tagline {
+			position: relative;
+			right: auto;
+			bottom: auto;
+		}
+	}
+	.testimonial {
+		margin: 0;
+	}
+}

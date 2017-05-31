@@ -1,0 +1,48 @@
+.site-header {
+	@include clearfix;
+	padding: $padding-unit * .5;
+	border-bottom: solid 4px $neutral-light;
+	position: relative;
+	z-index: 3;
+}
+.logo {
+	text-align: center;
+	img {
+		height: auto;
+		width: 11rem;
+		max-width: 100%;
+		position: relative;
+		top: 0;
+		transition: top .25s;
+		&:hover {
+			top: .25rem;
+		}
+	}
+}
+.header-contact {
+	text-align: center;
+	padding: ($padding-unit * .5) $padding-unit;
+	li {
+		display: inline-block;
+		margin-right: $padding-unit;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: $break-medium + 1) {
+
+	.logo {
+		padding: ($padding-unit * .25) $padding-unit;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.header-contact {
+		text-align: right;
+		float: right;
+		padding-right: $padding-unit * 1.5;
+	}
+
+}

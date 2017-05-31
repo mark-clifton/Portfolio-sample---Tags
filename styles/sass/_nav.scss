@@ -1,0 +1,164 @@
+.nav-toggle {
+	font-size: $base-font-size * 1.25;
+	display: block;
+}
+.site-nav {
+	font-family: $title-font;
+	font-weight: normal;
+	display: none;
+	li {
+		text-align: left;
+		border-radius: $corner-radius;
+		transition: background-color .25s;
+		a {
+			color: $dark;
+			background-color: transparent;
+			display: block;
+			padding: $padding-unit * .5;
+			border-radius: $corner-radius;
+			transition: color .25s, background-color .25s;
+			&:hover {
+				color: $light;
+				background-color: $brand-color !important;
+			}
+			&.on {
+				background-color: $neutral-light;
+			}
+		}
+	}
+	ul ul a {
+		padding-left: $padding-unit * 2;
+	}
+}
+.top-link {
+	display: none;
+	padding: 0 0 0 $padding-unit;
+	float: left;
+	a {
+		display: block;
+	}
+	img {
+		position: relative;
+		top: 0;
+		transition: top .25s;
+	}
+	&:hover {
+		img {
+			top: -$padding-unit * .125;
+		}
+	}
+}
+.utility-nav {
+	font-size: $base-font-size * 1.25;
+	background-color: $accent-color;
+	text-align: center;
+	padding: ($padding-unit * .5) $padding-unit;
+	li {
+		margin: $padding-unit * .125;
+	}
+	li, .button {
+		display: inline-block;
+	}
+	.button {
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (min-width: $break-medium + 1) {
+
+	@keyframes sticky-fade {
+		0%   { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	.site-header {
+		padding: 0;
+		background-color: $light;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		&.stuck {
+			position: fixed;
+			animation: sticky-fade .5s;
+			.header-contact, .logo {
+				display: none;
+			}
+			.site-nav {
+				text-align: right;
+				padding: ($padding-unit * .25) $padding-unit 0 $padding-unit;
+				> ul {
+					display: inline-block;
+					float: none;
+					clear: none;
+				}
+			}
+			.top-link {
+				display: inline-block;
+			}
+		}
+	}
+	.site-nav {
+		@include clearfix;
+		display: block;
+		float: right;
+		clear: right;
+		padding: ($padding-unit * .5) $padding-unit;
+		> ul {
+			float: right;
+			clear: right;
+			> li {
+				float: left;
+				z-index: +1;
+			}
+			ul {
+				background-color: $neutral-light;
+				min-width: 12rem;
+				padding: $padding-unit * .25;
+				border-radius: 0 $corner-radius $corner-radius $corner-radius;
+				visibility: hidden;
+				opacity: 0;
+				position: absolute;
+				top: 2.25rem;
+				left: 0;
+				transition: opacity .125s, top .25s;
+				a {
+					padding: ($padding-unit * .25) ($padding-unit * .5);
+					&.on {
+						background-color: lighten($neutral-light, 5%);
+					}
+				}
+			}
+		}
+		li {
+			position: relative;
+			&:hover {
+				background-color: $neutral-light;
+				> ul {
+					visibility: visible;
+					opacity: 1;
+					top: 2.75rem;
+					left: 0;
+				}
+			}
+		}
+	}
+	.utility-nav {
+		&.inside-utility-nav {
+			text-align: right;
+		}
+	}
+
+}
+
+@media only screen and (min-width: $break-large + 1) {
+
+	.site-nav {
+		text-align: right;
+		> ul {
+			display: inline-block;
+			float: none;
+			clear: none;
+		}
+	}
+
+}

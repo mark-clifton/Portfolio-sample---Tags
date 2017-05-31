@@ -1,0 +1,89 @@
+$social-icon-size: 2.5rem;
+.contact-footer {
+	background-color: $neutral-light;
+	@include clearfix;
+	margin-top: $social-icon-size * .5;
+	border: solid 4px $light;
+	position: relative;
+}
+.contact-details {
+	padding: ($padding-unit + $social-icon-size * .5) $padding-unit $padding-unit $padding-unit;
+	@include no-top-bottom-margins;
+	h3 {
+		font-size: $base-font-size;
+		margin: 0;
+		+ * {
+			margin-top: 0;
+		}
+	}
+}
+.footer-map {
+	height: $base-line-height * 15;
+	width: 100%;
+	border-top: solid 4px $light;
+}
+.social {
+	padding: 0 $padding-unit;
+	position: absolute;
+	top: -$social-icon-size * .5;
+	left: 0;
+	li {
+		display: inline-block;
+		margin-right: $padding-unit * .125;
+	}
+	a {
+		display: block;
+		border-radius: $social-icon-size;
+		transition: background-color .25s;
+		&.social-facebook {
+			background-color: $facebook-color;
+			&:hover {
+				background-color: lighten($facebook-color, 15%);
+			}
+		}
+		&.social-twitter {
+			background-color: $twitter-color;
+			&:hover {
+				background-color: lighten($twitter-color, 10%);
+			}
+		}
+		&.social-google-plus {
+			background-color: $google-plus-color;
+			&:hover {
+				background-color: lighten($google-plus-color, 15%);
+			}
+		}
+		&.social-pinterest {
+			background-color: $pinterest-color;
+			&:hover {
+				background-color: lighten($pinterest-color, 15%);
+			}
+		}
+		&.social-youtube {
+			background-color: $youtube-color;
+			&:hover {
+				background-color: lighten($youtube-color, 15%);
+			}
+		}
+	}
+	img {
+		height: $social-icon-size;
+		width: $social-icon-size;
+		border-radius: $social-icon-size;
+	}
+}
+.site-footer {
+	font-size: $base-font-size * .5;
+	line-height: 1.25em;
+	text-align: center;
+	padding: $padding-unit;
+}
+
+@media only screen and (min-width: $break-medium + 1) {
+
+	.footer-map {
+		border-top: none;
+		border-left: solid 4px $light;
+	}
+
+}

@@ -1,0 +1,194 @@
+.content {
+	position: relative;
+	z-index: 2;
+}
+.body-text {
+	padding: $padding-unit;
+}
+.content-section, .body-text, .side {
+	@include clearfix;
+}
+.subtitle {
+	font-size: $base-font-size * 1.5;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: $neutral;
+	display: block;
+}
+.hero {
+	background: $dark url("../images/hero.jpg") no-repeat center center;
+	background-size: cover;
+	height: 60vh;
+	border-bottom: solid 2px $light;
+	position: relative;
+	z-index: 1;
+	.tagline {
+		font-family: $title-font;
+		font-size: $base-font-size * 2;
+		line-height: 1em;
+		font-weight: 200;
+		text-transform: uppercase;
+		color: $light;
+		text-align: right;
+		width: 100%;
+		margin: 0;
+		padding: $padding-unit;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+.template-photo {
+	display: none;
+}
+.front-features {
+	background-color: $light;
+	position: relative;
+	z-index: +1;
+	> ul {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 2px;
+		> li {
+			display: flex;
+			width: 100%;
+			min-height: $base-line-height * 12;
+			padding: 2px;
+			a {
+				color: $light;
+				background-color: $dark;
+				display: block;
+				flex: 1;
+				min-height: $base-line-height * 11;
+				overflow: auto;
+				position: relative;
+				transition: background-color .5s;
+				&:hover {
+					background-color: $brand-color;
+					.feature-title, .feature-desc {
+						top: -$padding-unit * .25;
+					}
+				}
+			}
+		}
+	}
+}
+.feature-image {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: .8;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.feature-facilities {
+	background-image: url('../images/page/home-feature-facilities.jpg');
+}
+.feature-daycare {
+	background-image: url('../images/page/home-feature-daycare.jpg');
+}
+.feature-boarding {
+	background-image: url('../images/page/home-feature-boarding.jpg');
+}
+.feature-training {
+	background-image: url('../images/page/home-feature-training.jpg');
+}
+.feature-grooming {
+	background-image: url('../images/page/home-feature-grooming.jpg');
+}
+.feature-pawtners {
+	background-image: url('../images/page/home-feature-pawtners.jpg');
+}
+.feature-content {
+	background: linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
+	width: 100%;
+	padding: $padding-unit;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.feature-title, .feature-desc {
+	position: relative;
+	top: 0;
+	transition: top .25s;
+}
+.feature-title {
+	font-weight: $light-weight;
+	color: $light;
+	margin: 0 0 ($padding-unit * .25) 0;
+}
+.feature-desc {
+	font-size: $base-font-size * .875;
+	line-height: 1.25em;
+	margin: 0;
+}
+.front-callout {
+	font-size: $base-font-size * 1.25;
+	p {
+		margin-top: 0;
+	}
+}
+.callout-photo {
+	img {
+		width: 200px;
+		border: solid 4px $neutral-light;
+		border-radius: 50%;
+	}
+}
+.front-news {
+	border-top: solid thin $neutral-light;
+	h2 {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (min-width: $break-small + 1) {
+
+	.front-features {
+		> ul {
+			flex-direction: row;
+			> li {
+				width: 50%;
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: $break-medium + 1) {
+
+	.hero .tagline {
+		font-size: $base-font-size * 3;
+	}
+	.intro {
+		min-height: 21.5rem;
+	}
+	.template-photo {
+		display: block;
+		padding-left: $padding-unit;
+	}
+	.intro-photo {
+		position: absolute;
+		right: 0;
+		bottom: -$padding-unit * 1.5;
+	}
+	.front-features > ul > li {
+		width: 33.333333%;
+	}
+	.front-news {
+		border-top: none;
+	}
+	.image-left {
+		float: left;
+		margin: 0 $padding-unit 0 0;
+	}
+	.image-right {
+		float: right;
+		margin: 0 0 0 $padding-unit;
+	}
+
+}
